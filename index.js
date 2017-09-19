@@ -90,6 +90,7 @@ module.exports = {
 			args: "after-used"
 		} ],
 		"quote-props": [ "warn", "as-needed" ],
-		"one-var": [0]
+		"one-var": [0],
+		"padded-blocks": [0]
 	}
 };
