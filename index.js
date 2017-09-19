@@ -89,6 +89,7 @@ module.exports = {
 		"no-unused-vars": [ "warn", {
 			args: "after-used"
 		} ],
-		"quote-props": [ "warn", "as-needed" ]
+		"quote-props": [ "warn", "as-needed" ],
+		"one-var": [0]
 	}
 };
