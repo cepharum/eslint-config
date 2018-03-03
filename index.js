@@ -59,12 +59,14 @@ module.exports = {
 			beforeColon: false,
 			mode: "strict"
 		} ],
-		"max-len": [ "error", {
-			code: 120,
+		"max-len": [ "warn", {
+			code: 200,
 			ignoreRegExpLiterals: true,
 		} ],
-		"max-nested-callbacks": [ "error", 2 ],
-		"new-cap": "error",
+		"max-nested-callbacks": [ "error", 5 ],
+		"new-cap": [ "error", {
+			capIsNew: false,
+		} ],
 		"no-duplicate-imports": "error",
 		"no-else-return": "warn",
 		"no-extra-bind": "error",
