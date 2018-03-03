@@ -61,6 +61,7 @@ module.exports = {
 		} ],
 		"max-len": [ "error", {
 			code: 120,
+			ignoreRegExpLiterals: true,
 		} ],
 		"max-nested-callbacks": [ "error", 2 ],
 		"new-cap": "error",
