@@ -103,8 +103,8 @@ module.exports = {
 			arraysInObjects: true,
 			objectsInObjects: true
 		} ],
-		"one-var": false,
-		"padded-blocks": false,
+		"one-var": 0,
+		"padded-blocks": 0,
 		"prefer-promise-reject-errors": "error",
 		"quote-props": [ "warn", "as-needed" ],
 		quotes: [ "warn", "double" ],
