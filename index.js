@@ -28,69 +28,106 @@
 
 "use strict";
 
+/* eslint sort-keys: "error" */
 module.exports = {
-	extends: "standard",
+	env: {
+		browser: false,
+		es6: true,
+		mocha: true,
+		node: true,
+	},
+	extends: "eslint:recommended",
 	plugins: [
 		"promise",
 		"standard"
 	],
-	env: {
-		browser: false,
-		node: true,
-		es6: true,
-		mocha: true
-	},
 	rules: {
-		semi: [ "error", "always" ],
-		quotes: [ "warn", "double" ],
+		"array-bracket-spacing": [ "warn", "always", {
+			arraysInArrays: true,
+			objectsInArrays: true,
+			singleValue: false,
+		} ],
+		"comma-dangle": [ "warn", "only-multiline" ],
+		"comma-style": [ "warn", "last" ],
+		curly: [ "error", "multi-line" ],
+		"dot-notation": "warn",
+		"guard-for-in": "error",
 		indent: [ "warn", "tab", {
 			SwitchCase: 1
-		} ],
-		"no-mixed-spaces-and-tabs": [ "warn", "smart-tabs" ],
-		"no-tabs": [0],
-		"space-in-parens": [ "warn", "always" ],
-		"object-curly-spacing": [ "warn", "always", {
-			arraysInObjects: true,
-			objectsInObjects: true
-		} ],
-		"array-bracket-spacing": [ "warn", "always", {
-			singleValue: false,
-			arraysInArrays: true,
-			objectsInArrays: true
-		} ],
-		"space-before-function-paren": [ "warn", "never" ],
-		"space-infix-ops": ["warn"],
-		"no-multiple-empty-lines": [ "warn", {
-			max: 4,
-			maxEOF: 1,
-			maxBOF: 0,
-		} ],
-		"valid-jsdoc": [ "error", {
-			requireReturn: false,
-			requireReturnType: true,
-			requireParamDescription: false,
-			requireReturnDescription: false
-		} ],
-		"require-jsdoc": [ "error", {
-			require: {
-				FunctionDeclaration: true,
-				MethodDefinition: true,
-				ClassDeclaration: true,
-				ArrowFunctionExpression: false
-			}
 		} ],
 		"key-spacing": [ "warn", {
 			beforeColon: false,
 			mode: "strict"
 		} ],
-		"comma-style": [ "warn", "last" ],
-		"comma-dangle": [ "warn", "only-multiline" ],
-		"no-return-assign": [ "warn", "except-parens" ],
-		"no-unused-vars": [ "warn", {
-			args: "after-used"
+		"max-len": [ "error", {
+			code: 120,
 		} ],
+		"max-nested-callbacks": [ "error", 2 ],
+		"new-cap": "error",
+		"no-duplicate-imports": "error",
+		"no-else-return": "warn",
+		"no-extra-bind": "error",
+		"no-floating-decimal": "warn",
+		"no-labels": "error",
+		"no-lone-blocks": "error",
+		"no-lonely-if": "warn",
+		"no-mixed-spaces-and-tabs": [ "warn", "smart-tabs" ],
+		"no-multiple-empty-lines": [ "warn", {
+			max: 4,
+			maxBOF: 0,
+			maxEOF: 1,
+		} ],
+		"no-negated-condition": "warn",
+		"no-new-object": "error",
+		"no-new-wrappers": "error",
+		"no-proto": "error",
+		"no-restricted-syntax": [ "error", "FunctionExpression" ],
+		"no-return-assign": [ "warn", "except-parens" ],
+		"no-self-compare": "error",
+		"no-tabs": [0],
+		"no-throw-literal": "error",
+		"no-unmodified-loop-condition": "error",
+		"no-unused-expressions": [ "error", {
+			allowShortCircuit: true,
+		} ],
+		"no-unused-vars": [ "warn", {
+			args: "after-used",
+		} ],
+		"no-useless-call": "error",
+		"no-useless-concat": "warn",
+		"no-useless-return": "warn",
+		"no-void": "error",
+		"no-warning-comments": "warn",
+		"no-with": "error",
+		"object-curly-spacing": [ "warn", "always", {
+			arraysInObjects: true,
+			objectsInObjects: true
+		} ],
+		"one-var": false,
+		"padded-blocks": false,
+		"prefer-promise-reject-errors": "error",
 		"quote-props": [ "warn", "as-needed" ],
-		"one-var": [0],
-		"padded-blocks": [0]
+		quotes: [ "warn", "double" ],
+		"require-jsdoc": [ "error", {
+			require: {
+				ArrowFunctionExpression: false,
+				ClassDeclaration: true,
+				FunctionDeclaration: true,
+				MethodDefinition: true,
+			}
+		} ],
+		semi: [ "error", "always" ],
+		"space-before-function-paren": [ "warn", "never" ],
+		"space-in-parens": [ "warn", "always" ],
+		"space-infix-ops": ["warn"],
+		strict: [ "warn", "global" ],
+		"valid-jsdoc": [ "error", {
+			requireParamDescription: false,
+			requireReturn: false,
+			requireReturnDescription: false,
+			requireReturnType: true,
+		} ],
+		"wrap-iife": [ "error", "inside" ],
+		yoda: "warn",
 	}
 };
