@@ -81,7 +81,6 @@ module.exports = {
 		"no-new-object": "error",
 		"no-new-wrappers": "error",
 		"no-proto": "error",
-		"no-restricted-syntax": [ "error", "FunctionExpression" ],
 		"no-return-assign": [ "warn", "except-parens" ],
 		"no-self-compare": "error",
 		"no-tabs": [0],
