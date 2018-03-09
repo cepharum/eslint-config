@@ -132,6 +132,9 @@ module.exports = {
 			{
 				code: 160,
 				ignoreRegExpLiterals: true,
+				ignoreStrings: true,
+				ignoreTrailingComments: true,
+				ignoreUrls: true,
 			}
 		],
 		"max-nested-callbacks": [
@@ -172,6 +175,12 @@ module.exports = {
 		"no-mixed-spaces-and-tabs": [
 			"warn",
 			"smart-tabs"
+		],
+		"no-multi-spaces": [
+			"warn",
+			{
+				ignoreEOLComments: true,
+			}
 		],
 		"no-multiple-empty-lines": [ "warn", {
 			max: 4,
@@ -222,6 +231,9 @@ module.exports = {
 		"prefer-promise-reject-errors": "error",
 		"prefer-rest-params": "error",
 		"prefer-spread": "warn",
+		"promise/always-return": "off",
+		"promise/avoid-new": "off",
+		"promise/no-nesting": "off",
 		"quote-props": [ "warn", "as-needed" ],
 		quotes: [
 			"warn",
