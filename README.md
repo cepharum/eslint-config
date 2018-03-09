@@ -3,19 +3,21 @@
 ESLint configuration to be shared among projects of cepharum GmbH
 
 
-## Installation
+### Prerequisites
 
-    npm i -D eslint-config-cepharum
+The configuration works with recent versions of ESLint (4.18+) and requires additional installation of single ESLint plugin providing additional checks on use of promises. Either package may be installed locally or globally.
+ 
+Local installation supports injection of proper dependencies into your project:
 
-### Additional Requirements
-
-The configuration relies on selected set of ESLint packages to be installed either locally or globally. Installing locally supports injection of proper dependencies into your project:
-
-    npm i -D eslint eslint-config-standard eslint-plugin-standard eslint-plugin-import eslint-plugin-node eslint-plugin-node eslint-plugin-promise
+    npm i -D eslint eslint-plugin-promise
 
 Global installation helps with sharing same tool set in several projects simultaneously:
 
-    npm i -g eslint eslint-config-standard eslint-plugin-standard eslint-plugin-import eslint-plugin-node eslint-plugin-node eslint-plugin-promise
+    npm i -g eslint eslint-plugin-promise
+
+## Installation
+
+    npm i -D eslint-config-cepharum
 
 ## Usage
 
