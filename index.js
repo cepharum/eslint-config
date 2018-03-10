@@ -148,7 +148,12 @@ module.exports = {
 		"no-await-in-loop": "error",
 		"no-caller": "error",
 		"no-catch-shadow": "error",
-		"no-confusing-arrow": "error",
+		"no-confusing-arrow": [
+			"error",
+			{
+				allowParens: true,
+			}
+		],
 		"no-duplicate-imports": "error",
 		"no-else-return": "warn",
 		"no-empty-function": "error",
