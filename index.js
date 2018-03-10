@@ -238,7 +238,10 @@ module.exports = {
 		"prefer-spread": "warn",
 		"promise/always-return": "off",
 		"promise/avoid-new": "off",
+		"promise/no-callback-in-promise": "off",
 		"promise/no-nesting": "off",
+		"promise/no-promise-in-callback": "off",
+		"promise/param-names": "off",
 		"quote-props": [ "warn", "as-needed" ],
 		quotes: [
 			"warn",
