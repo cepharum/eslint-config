@@ -81,3 +81,5 @@ function processor( someInstance ) {
 const instance = new AnotherClass( { info: 42 }, "label" );
 
 processor( instance );
+
+console.log( instance.hasOwnProperty( "test" ) );

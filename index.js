@@ -197,6 +197,7 @@ module.exports = {
 		"no-new-wrappers": "error",
 		"no-param-reassign": "error",
 		"no-proto": "error",
+		"no-prototype-builtins": "off",
 		"no-return-assign": "error",
 		"no-self-compare": "error",
 		"no-shadow": "warn",
