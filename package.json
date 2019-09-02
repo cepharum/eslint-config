@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-cepharum",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"description": "ESLint configuration to be shared among projects of cepharum GmbH",
 	"main": "index.js",
 	"scripts": {
