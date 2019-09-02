@@ -111,6 +111,10 @@ module.exports = {
 			beforeColon: false,
 			mode: "strict",
 		} ],
+		"keyword-spacing": [ "warn", {
+			before: true,
+			after: true,
+		} ],
 		"linebreak-style": "warn",
 		"lines-around-comment": [
 			"warn",
