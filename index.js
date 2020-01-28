@@ -84,7 +84,8 @@ module.exports = {
 		"consistent-return": "error",
 		"consistent-this": [
 			"warn",
-			"that"
+			"that",
+			"api",  // to improve readability of hitchy-based code
 		],
 		curly: "off",
 		"default-case": "off",
