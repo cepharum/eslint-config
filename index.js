@@ -200,7 +200,7 @@ module.exports = {
 		"no-negated-condition": "warn",
 		"no-new-object": "error",
 		"no-new-wrappers": "error",
-		"no-param-reassign": "error",
+		"no-param-reassign": [ "warn", { props: true } ],
 		"no-proto": "error",
 		"no-prototype-builtins": "off",
 		"no-return-assign": "error",
