@@ -2,8 +2,11 @@
 
 ESLint configuration to be shared among projects of cepharum GmbH
 
+## License
 
-### Prerequisites
+[MIT](LICENSE)
+
+## Prerequisites
 
 The configuration works with recent versions of ESLint (4.18+) and requires additional installation of single ESLint plugin providing additional checks on use of promises. Either package may be installed locally or globally.
  
