@@ -86,8 +86,8 @@ module.exports = {
 			mode: "strict",
 		} ],
 		"keyword-spacing": [ "warn", {
-			before: true,
 			after: true,
+			before: true,
 		} ],
 		"linebreak-style": "warn",
 		"lines-around-comment": [
@@ -154,7 +154,18 @@ module.exports = {
 		"no-labels": "error",
 		"no-lone-blocks": "error",
 		"no-lonely-if": "warn",
-		"no-mixed-operators": "error",
+		"no-mixed-operators": [
+			"error",
+			{
+				allowSamePrecedence: true,
+				groups: [
+					[ "&", "|", "^", "~", "<<", ">>", ">>>" ],
+					[ "==", "!=", "===", "!==", ">", ">=", "<", "<=" ],
+					[ "&&", "||" ],
+					[ "in", "instanceof" ]
+				]
+			}
+		],
 		"no-mixed-spaces-and-tabs": [
 			"warn",
 			"smart-tabs"
@@ -173,7 +184,7 @@ module.exports = {
 		"no-negated-condition": "warn",
 		"no-new-object": "error",
 		"no-new-wrappers": "error",
-		"no-param-reassign": [ "warn", { props: true } ],
+		"no-param-reassign": "off",
 		"no-proto": "error",
 		"no-prototype-builtins": "off",
 		"no-return-assign": "error",
