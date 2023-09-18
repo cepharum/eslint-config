@@ -4,7 +4,7 @@
 	"description": "ESLint configuration to be shared among projects of cepharum GmbH",
 	"main": "index.js",
 	"scripts": {
-		"test": "eslint **/*.js"
+		"test": "eslint **/*.js --fix"
 	},
 	"repository": {
 		"type": "git",

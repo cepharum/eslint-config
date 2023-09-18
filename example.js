@@ -5,7 +5,7 @@
  */
 class SomeClass {
 	/**
-	 * @param {object} data
+	 * @param {object} data some data
 	 */
 	constructor( data ) {
 		this.data = data;
@@ -17,8 +17,8 @@ class SomeClass {
  */
 class AnotherClass extends SomeClass {
 	/**
-	 * @param {object} data
-	 * @param {string} moreData
+	 * @param {object} data some data
+	 * @param {string} moreData additional data
 	 */
 	constructor( data, moreData ) {
 		super( data );
@@ -44,7 +44,8 @@ class AnotherClass extends SomeClass {
 /**
  * Processes some provided instance of another class.
  *
- * @param {AnotherClass} someInstance
+ * @param {AnotherClass} someInstance instance to process
+ * @returns {void}
  */
 function processor( someInstance ) {
 	console.log( someInstance.data, someInstance.more, someInstance.MORE ); // eslint-disable-line no-console

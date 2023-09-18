@@ -86,8 +86,8 @@ module.exports = {
 			mode: "strict",
 		} ],
 		"keyword-spacing": [ "warn", {
-			before: true,
 			after: true,
+			before: true,
 		} ],
 		"linebreak-style": "warn",
 		"lines-around-comment": [
@@ -157,13 +157,13 @@ module.exports = {
 		"no-mixed-operators": [
 			"error",
 			{
-				"groups": [
-					["&", "|", "^", "~", "<<", ">>", ">>>"],
-					["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-					["&&", "||"],
-					["in", "instanceof"]
-				],
-				"allowSamePrecedence": true
+				allowSamePrecedence: true,
+				groups: [
+					[ "&", "|", "^", "~", "<<", ">>", ">>>" ],
+					[ "==", "!=", "===", "!==", ">", ">=", "<", "<=" ],
+					[ "&&", "||" ],
+					[ "in", "instanceof" ]
+				]
 			}
 		],
 		"no-mixed-spaces-and-tabs": [
