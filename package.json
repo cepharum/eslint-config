@@ -20,7 +20,7 @@
 	},
 	"homepage": "https://github.com/cepharum/eslint-config#readme",
 	"peerDependencies": {
-		"eslint": ">= 4.7",
-		"eslint-plugin-promise": ">= 3.5"
+		"eslint": ">= 8",
+		"eslint-plugin-promise": ">= 6"
 	}
 }
