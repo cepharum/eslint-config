@@ -3,6 +3,7 @@
 	"version": "1.0.12",
 	"description": "ESLint configuration to be shared among projects of cepharum GmbH",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"test": "eslint **/*.js --fix"
 	},
@@ -20,7 +21,13 @@
 	},
 	"homepage": "https://github.com/cepharum/eslint-config#readme",
 	"peerDependencies": {
-		"eslint": ">= 8",
-		"eslint-plugin-promise": ">= 6"
+		"eslint": ">= 9"
+	},
+	"dependencies": {
+		"eslint-plugin-jsdoc": "^50.4.3",
+		"eslint-plugin-promise": "^7.1.0"
+	},
+	"devDependencies": {
+		"eslint": "^9.14.0"
 	}
 }

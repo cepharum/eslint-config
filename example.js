@@ -1,5 +1,3 @@
-"use strict";
-
 /**
  * Implements some class.
  */
@@ -55,4 +53,4 @@ const instance = new AnotherClass( { info: 42 }, "label" );
 
 processor( instance );
 
-console.log( instance.hasOwnProperty( "test" ) );
+console.warn( instance.hasOwnProperty( "test" ) );
