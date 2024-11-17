@@ -5,7 +5,16 @@ import rules from "./rules.cjs";
 
 export default [
 	{
-		files: ["**/*.{js,mjs,jsx,vue}"],
+		files: ["**/*.{jsx,vue}"],
+		plugins: {
+			jsdoc: pluginJsdoc,
+			promise: pluginPromise,
+		},
+		rules,
+	},
+	{
+		files: ["**/*.{js,mjs}"],
+		ignores: ["**/test/**/*.{js,mjs}"],
 		plugins: {
 			jsdoc: pluginJsdoc,
 			promise: pluginPromise,
@@ -14,10 +23,25 @@ export default [
 	},
 	{
 		files: ["**/*.{cjs}"],
+		ignores: ["**/test/**/*.{cjs}"],
 		plugins: {
 			jsdoc: pluginJsdoc,
 			promise: pluginPromise,
 		},
 		rules,
+	},
+	{
+		files: ["**/test/**/*.{js,mjs,cjs}"],
+		plugins: {
+			jsdoc: pluginJsdoc,
+			promise: pluginPromise,
+		},
+		rules: {
+			...rules,
+			"jsdoc/require-jsdoc": "off",
+			"no-empty-function": "off",
+			"max-len": "off",
+			"max-depth": "off",
+		},
 	},
 ];
